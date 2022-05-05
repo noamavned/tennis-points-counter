@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./javascript/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>Tennis point counter</title>
+</head>
+<body onload="show_data()">
+
+    <div class="top">
+        <h2 class="title", id="home_t">HOME</h2>
+        <h2 class="title", id="away_t">AWAY</h2>
+    </div>
+
+    <div class="points">
+        <div class="point" id="point_left">0</div>
+        <div class="point" id="point_right">0</div>
+    </div>
+
+    <div class="resets">
+        <button class="reset" id="reset_left" onclick="clear_left()">reset left</button>
+        <button class="reset" id="reset_right" onclick="clear_right()">reset right</button>
+    </div>
+
+    <div class="arrows_up">
+        <div class="arrow up left" id="arrow_up_left" onclick="arrow_clicked('up_left')"></div>
+        <div class="arrow up right" id="arrow_up_right" onclick="arrow_clicked('up_right')"></div>
+    </div>
+    <div class="arrows_down">
+        <div class="arrow down left" id="arrow_down_left" onclick="arrow_clicked('down_left')"></div>
+        <div class="arrow down right" id="arrow_down_right" onclick="arrow_clicked('down_right')"></div>
+    </div>
+
+    <div class="reset_all">
+        <button class="reset" id="reset_all" onclick="clear_all()">reset all</button>
+    </div>
+
+</body>
+</html>
