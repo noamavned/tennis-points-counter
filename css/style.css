@@ -1,0 +1,134 @@
+* {
+    user-select: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+
+body {
+    background-color: rgb(177, 177, 177);
+}
+
+.top {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 97.5%;
+    right: 0%;
+}
+
+.points {
+    margin-top: 18%;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+}
+.point {
+    background-color: rgb(220, 220, 220);
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border-radius: 7.5px;
+}
+
+.resets {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    transform: translate(0px, 5px);
+}
+.reset{
+    display:inline-block;
+    border:0.05em solid #373737;
+    border-radius:0.12em;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    font-size: large;
+    color:#dedede;
+    text-align:center;
+    transition: all 0.2s;
+    background-color:#991010;
+    justify-content: center;
+    align-items: center;
+    width: 8.5%;
+    cursor: pointer;
+}
+.reset:hover{
+    color:#991010;
+    background-color:#dedede;
+}
+@media all and (max-width:30em){
+    .reset{
+        display:block;
+        margin:0.4em auto;
+    }
+}
+.reset:active {
+    transform: translateY(0.5px);
+}
+#reset_left {
+    left: 38.5%;
+}
+#reset_right {
+    right: 38.5%;
+}
+#reset_left, #reset_right {
+    position: absolute;
+    top: -25vh;
+}
+.reset_all {
+    width: 100%;
+    position: absolute;
+    right: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 3.5%;
+}
+
+.arrow {
+    background-color: #000000;
+	clip-path: polygon(50% 0, 100% 100%, 0 100%);
+	width: 100px;
+	height: 50px;
+    cursor: pointer;
+}
+.down {
+    transform: rotate(180deg);
+}
+.arrows_down {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 0%;
+    bottom: 5%;
+}
+.arrows_up {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 0%;
+    top: 24%;
+}
+#arrow_up_left:active {
+    transform: rotate(360deg) translateY(0.5px);
+}
+#arrow_up_right:active {
+    transform:rotate(360deg) translateY(0.5px);
+}
+#arrow_down_left:active {
+    transform: rotate(180deg) translateY(0.5px);
+}
+#arrow_down_right:active {
+    transform: rotate(180deg) translateY(0.5px);
+}
